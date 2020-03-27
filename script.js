@@ -3,8 +3,6 @@ const currentSec = document.querySelector(".secline");
 const currentMin = document.querySelector(".minline");
 const currentHour = document.querySelector(".hourline");
 
-time();
-
 function time(){
     const date = new Date();
     
@@ -21,17 +19,25 @@ function time(){
     currentHour.style.transform = `rotate(${hourDeg}deg)`;
    
     
-    //console.log(sec);
+    console.log(sec);
     //console.log(min);
     //console.log(hour);
-        
+   
 }
-
-const tick = setTimeout(time,1000);
+let tick = setInterval(time, 1000)
 
 function stopFunction(){
+    console.log("stop");
     clearInterval(tick);
+    
 }
+
+function startFunction(){
+    console.log("start");
+    tick = setInterval(time, 1000);
+    return tick;   
+}
+
 
 
 
