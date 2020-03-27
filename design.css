@@ -26,7 +26,7 @@ body{
     bottom: 50%;
     left:50%;
     z-index: 2;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     transform-origin: bottom;
 }
 
@@ -39,22 +39,20 @@ body{
     bottom: 50%;
     left:50%;
     z-index: 1;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     transform-origin: bottom; 
-    transform: rotate(360deg);
 }
 
 .hourline{
-    
     width: 7px;
     height: 20%;
-    background:black;
+    background:blue;
     border-radius: 3px;
     position: absolute;
     bottom: 50%;
     left:50%;
     z-index: 3;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     transform-origin: bottom;
 }
 
