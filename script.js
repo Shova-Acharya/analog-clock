@@ -1,4 +1,6 @@
 
+let clockInterval = setInterval(time, 1000)
+
 const currentSec = document.querySelector(".secline");
 const currentMin = document.querySelector(".minline");
 const currentHour = document.querySelector(".hourline");
@@ -22,20 +24,19 @@ function time(){
     console.log(sec);
     //console.log(min);
     //console.log(hour);
-   
-}
-let tick = setInterval(time, 1000)
 
-function stopFunction(){
+}
+
+function stopClock(){
     console.log("stop");
-    clearInterval(tick);
+    clearInterval(clockInterval);
     
 }
 
-function startFunction(){
+function startClock(){
     console.log("start");
-    tick = setInterval(time, 1000);
-    return tick;   
+    clockInterval = setInterval(time, 1000);
+    return clockInterval;   
 }
 
 
