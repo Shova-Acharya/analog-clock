@@ -2,6 +2,9 @@ body{
     background-color:lightgrey;
 
 }
+button{
+    font-size: 25px;
+}
 
 .circle{
     position: absolute;

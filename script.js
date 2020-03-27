@@ -14,7 +14,7 @@ function time(){
 
     const secDeg = sec * 6; //360/60
     const minDeg = min *6; //360/60
-    const hourDeg = (hour * 30) + (0.5 * min); //360/12
+    const hourDeg = (hour * 30) + (0.5 * min); //360/12, 30/60
 
     currentSec.style.transform = `rotate(${secDeg}deg)`;
     currentMin.style.transform = `rotate(${minDeg}deg)`;
@@ -24,9 +24,15 @@ function time(){
     //console.log(sec);
     //console.log(min);
     //console.log(hour);
-    
-    setTimeout(time,1000);   
+        
 }
+
+const tick = setTimeout(time,1000);
+
+function stopFunction(){
+    clearInterval(tick);
+}
+
 
 
 
