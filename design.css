@@ -1,0 +1,71 @@
+body{
+    background-color:lightgrey;
+
+}
+
+.circle{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: url(image1.jpg);
+    background-size: cover;
+    border: 30px solid black;
+    box-shadow: 0 0 1rem black ;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+}
+
+.minline{
+    width: 5px;
+    height: 30%;
+    background:blue;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 50%;
+    left:50%;
+    z-index: 2;
+    transform: translateX(-50%);
+    transform-origin: bottom;
+}
+
+.secline{
+    width: 2px;
+    height: 35%;
+    background:red;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 50%;
+    left:50%;
+    z-index: 1;
+    transform: translateX(-50%);
+    transform-origin: bottom; 
+    transform: rotate(360deg);
+}
+
+.hourline{
+    
+    width: 7px;
+    height: 20%;
+    background:black;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 50%;
+    left:50%;
+    z-index: 3;
+    transform: translateX(-50%);
+    transform-origin: bottom;
+}
+
+.dot{
+    height: 25px;
+    width: 25px;
+    background-color:black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    z-index: 4;
+    transform: translate(-50%, -50%);       
+}
