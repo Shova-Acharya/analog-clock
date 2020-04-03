@@ -1,5 +1,5 @@
 
-let clockInterval = setInterval(time, 1000)
+let clockInterval = setInterval(time, 1000);
 
 const currentSec = document.querySelector(".secline");
 const currentMin = document.querySelector(".minline");
@@ -20,17 +20,14 @@ function time(){
     currentMin.style.transform = `rotate(${minDeg}deg)`;
     currentHour.style.transform = `rotate(${hourDeg}deg)`;
    
-    
-    console.log(sec);
+    //console.log(sec);
     //console.log(min);
     //console.log(hour);
-
 }
 
 function stopClock(){
     console.log("stop");
-    clearInterval(clockInterval);
-    
+    clearInterval(clockInterval); 
 }
 
 function startClock(){

@@ -7,7 +7,6 @@ body{
 
 }
 button{
-    top: 10px;
     font-size: 25px;
     border: 1px solid lightblue;
     background-color:lightgrey;
@@ -22,7 +21,7 @@ button{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background: url(image1.jpg);
+    background: url(images/image1.jpg);
     background-size: cover;
     border: 30px solid black;
     box-shadow: 0 0 1rem black ;
